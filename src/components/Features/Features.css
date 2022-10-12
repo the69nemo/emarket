@@ -1,0 +1,53 @@
+.features__container {
+  margin: 0 auto;
+  padding: 80px 0;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.features__title {
+  margin: 0 0 36px;
+  color: var(--dark-primary);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+.features__card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  column-gap: 16px;
+}
+
+.features__card {
+  background-color: var(--light-gray);
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.features__card-title {
+  margin: 12px 0 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--dark-primary);
+}
+
+.features__card-subtitle {
+  margin: 12px 0 0;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--dark-primary);
+}
