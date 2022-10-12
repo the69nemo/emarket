@@ -5,6 +5,7 @@ import Hero from '../Hero/Hero';
 import Features from '../Features/Features';
 import Listings from '../Listings/Listings';
 import Promo from '../Promo/Promo';
+import Spam from '../Spam/Spam';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Features />
       <Listings />
       <Promo />
+      <Spam />
     </div>
   );
 }
