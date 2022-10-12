@@ -11,3 +11,8 @@
   line-height: 150%;
   color: #2a254b;
 }
+
+.type_promo {
+  color: var(--white);
+  background-color: var(--primary);
+}

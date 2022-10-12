@@ -1,0 +1,42 @@
+.promo__container {
+  margin: 0 auto;
+  padding: 60px 80px;
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 478px;
+  column-gap: 16px;
+}
+
+.promo__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--dark-primary);
+  padding: 64px 75px 56px 64px;
+}
+
+.promo__text-title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  color: var(--white);
+}
+
+.promo__text-subtitle {
+  margin: 12px 0 0;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white);
+}
+
+.promo__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
