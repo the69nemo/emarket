@@ -1,0 +1,13 @@
+.link-view {
+  display: inline-block;
+  max-width: 170px;
+  padding: 16px 32px;
+  background-color: var(--light-gray);
+  text-decoration: none;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2a254b;
+}
