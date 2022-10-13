@@ -1,6 +1,12 @@
 import React from "react";
 import "./Footer.css";
 import "../../blocks/input-email/input-email.css";
+import LinkedInIcon from '../../img/icons/in-icon.svg';
+import FacebookIcon from '../../img/icons/fa-icon.svg';
+import InstagramIcon from '../../img/icons/inst-icon.svg';
+import SkypeIcon from '../../img/icons/sky-icon.svg';
+import TwitterIcon from '../../img/icons/tvi-icon.svg';
+import PinIcon from '../../img/icons/pi-icon.svg';
 
 function Footer() {
   return (
@@ -93,16 +99,19 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="input-wrapper">
-            <input
-              id="input"
-              className="input"
-              type="email"
-              placeholder="your@email.com"
-            />
-            <button type="submit" className="input__button">
-              Sign up
-            </button>
+          <div className="footer__input-contaier">
+            <h3 className="footer__title">Join our mailing list</h3>
+            <div className="input-wrapper">
+              <input
+                id="input"
+                className="input input_footer"
+                type="email"
+                placeholder="your@email.com"
+              />
+              <button type="submit" className="input__button input__button_footer">
+                Sign up
+              </button>
+            </div>
           </div>
         </div>
         <div className="footer__borderline" />
@@ -113,22 +122,76 @@ function Footer() {
           <div className="footer__social-icon-wrapper">
             <ul className="footer__social-icon-lists">
               <li className="footer__social-icon-list">
-                <img src="" className="footer__social-icon" alt="social icon" />
+                <a
+                  href="javascript:void(0)"
+                  className="footer__social-icon-link"
+                >
+                  <img
+                    src={LinkedInIcon}
+                    className="footer__social-icon"
+                    alt="social icon"
+                  />
+                </a>
               </li>
               <li className="footer__social-icon-list">
-                <img src="" className="footer__social-icon" alt="social icon" />
+                <a
+                  href="javascript:void(0)"
+                  className="footer__social-icon-link"
+                >
+                  <img
+                    src={FacebookIcon}
+                    className="footer__social-icon"
+                    alt="social icon"
+                  />
+                </a>
               </li>
               <li className="footer__social-icon-list">
-                <img src="" className="footer__social-icon" alt="social icon" />
+                <a
+                  href="javascript:void(0)"
+                  className="footer__social-icon-link"
+                >
+                  <img
+                    src={InstagramIcon}
+                    className="footer__social-icon"
+                    alt="social icon"
+                  />
+                </a>
               </li>
               <li className="footer__social-icon-list">
-                <img src="" className="footer__social-icon" alt="social icon" />
+                <a
+                  href="javascript:void(0)"
+                  className="footer__social-icon-link"
+                >
+                  <img
+                    src={SkypeIcon}
+                    className="footer__social-icon"
+                    alt="social icon"
+                  />
+                </a>
               </li>
               <li className="footer__social-icon-list">
-                <img src="" className="footer__social-icon" alt="social icon" />
+                <a
+                  href="javascript:void(0)"
+                  className="footer__social-icon-link"
+                >
+                  <img
+                    src={TwitterIcon}
+                    className="footer__social-icon"
+                    alt="social icon"
+                  />
+                </a>
               </li>
               <li className="footer__social-icon-list">
-                <img src="" className="footer__social-icon" alt="social icon" />
+                <a
+                  href="javascript:void(0)"
+                  className="footer__social-icon-link"
+                >
+                  <img
+                    src={PinIcon}
+                    className="footer__social-icon"
+                    alt="social icon"
+                  />
+                </a>
               </li>
             </ul>
           </div>

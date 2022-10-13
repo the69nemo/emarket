@@ -40,3 +40,26 @@
 .input__button:hover {
   opacity: .5;
 }
+
+.input__button_footer {
+  background-color: var(--white);
+  color: var(--dark-primary);
+  max-width: 118px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.input_footer {
+  width: 100%;
+  max-width: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: var(--white);
+  border: 0;
+  flex-grow: 6;
+  flex-shrink: 1000;
+}
+
+.input_footer::placeholder {
+  color: var(--white);
+}
+
