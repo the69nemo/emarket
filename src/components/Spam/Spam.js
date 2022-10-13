@@ -1,5 +1,6 @@
 import React from 'react';
 import './Spam.css';
+import '../../blocks/input-email/input-email.css';
 import CheckMarkIcon from '../../img/icons/Checkmark--filled.svg';
 
 function Spam() {

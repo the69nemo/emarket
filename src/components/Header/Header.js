@@ -23,13 +23,13 @@ function Header() {
         </div>
         <div className="header__border-line" />
         <nav className="header__nav">
-          <li className="header__nav-list">Plant pots</li>
-          <li className="header__nav-list">Ceramics</li>
-          <li className="header__nav-list">Tables</li>
-          <li className="header__nav-list">Chairs</li>
-          <li className="header__nav-list">Crockery</li>
-          <li className="header__nav-list">Tableware</li>
-          <li className="header__nav-list">Cutlery</li>
+          <a href='javascript:void(0)' className="header__nav-link">Plant pots</a>
+          <a href='javascript:void(0)' className="header__nav-link">Ceramics</a>
+          <a href='javascript:void(0)' className="header__nav-link">Tables</a>
+          <a href='javascript:void(0)' className="header__nav-link">Chairs</a>
+          <a href='javascript:void(0)' className="header__nav-link">Crockery</a>
+          <a href='javascript:void(0)' className="header__nav-link">Tableware</a>
+          <a href='javascript:void(0)' className="header__nav-link">Cutlery</a>
         </nav>
       </div>
     </header>

@@ -35,21 +35,26 @@
 
 .header__nav {
   margin: 0;
-  list-style: none;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.header__nav-list {
+.header__nav-link {
+  text-decoration: none;
   font-family: 'Satoshi';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #726E8D
+  color: #726E8D;
+  transition: all .5s ease-in-out;
 }
 
-.header__nav-list:not(:last-child) {
+.header__nav-link:not(:last-child) {
   margin-right: 44px;
+}
+
+.header__nav-link:hover {
+  opacity: .5;
 }

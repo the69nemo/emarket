@@ -6,6 +6,7 @@ import Features from '../Features/Features';
 import Listings from '../Listings/Listings';
 import Promo from '../Promo/Promo';
 import Spam from '../Spam/Spam';
+import Footer from '../Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Listings />
       <Promo />
       <Spam />
+      <Footer />
     </div>
   );
 }
