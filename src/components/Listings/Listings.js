@@ -5,6 +5,7 @@ import One from "../../img/images/listings-img/1.jpg";
 import Two from "../../img/images/listings-img/2.jpg";
 import Three from "../../img/images/listings-img/3.jpg";
 import Four from "../../img/images/listings-img/4.jpg";
+import LinkView from "../../blocks/link-view/link-view";
 
 function Listings() {
   return (
@@ -32,9 +33,7 @@ function Listings() {
             <span className="listings__card-price">£399</span>
           </div>
         </div>
-        <a className="link-view" href="#">
-          View collection
-        </a>
+        <LinkView text="View collection" />
       </div>
     </div>
   );

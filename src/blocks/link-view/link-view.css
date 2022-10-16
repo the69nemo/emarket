@@ -1,5 +1,5 @@
 .link-view {
-  max-width: 170px;
+  width: 170px;
   padding: 16px 32px;
   background-color: var(--light-gray);
   text-decoration: none;
@@ -14,6 +14,11 @@
 .type_promo {
   color: var(--white);
   background-color: var(--primary);
-  max-width: 100%;
-  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .link-view {
+    width: 100%;
+    text-align: center;
+  }
 }
