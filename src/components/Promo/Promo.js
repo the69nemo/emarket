@@ -1,7 +1,8 @@
 import React from "react";
 import "./Promo.css";
 import "../../blocks/link-view/link-view.css";
-import PromoImg from '../../img/images/promo-img.jpg';
+import PromoImg from "../../img/images/promo-img.jpg";
+import LinkView from "../../blocks/link-view/link-view";
 
 function Promo() {
   return (
@@ -15,11 +16,9 @@ function Promo() {
               studio in South London in early 2014
             </p>
           </div>
-          <a className="link-view type_promo" href="#">
-            View collection
-          </a>
+          <LinkView type="type_promo" text="View collection" />
         </div>
-        <img className="promo__img" src={PromoImg} alt='image' />
+        <img className="promo__img" src={PromoImg} alt="image" />
       </div>
     </div>
   );

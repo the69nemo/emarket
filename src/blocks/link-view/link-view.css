@@ -1,5 +1,4 @@
 .link-view {
-  display: inline-block;
   max-width: 170px;
   padding: 16px 32px;
   background-color: var(--light-gray);
@@ -15,4 +14,6 @@
 .type_promo {
   color: var(--white);
   background-color: var(--primary);
+  max-width: 100%;
+  text-align: center;
 }
