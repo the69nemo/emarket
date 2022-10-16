@@ -1,12 +1,13 @@
 import React from "react";
 import "./Footer.css";
 import "../../blocks/input-email/input-email.css";
-import LinkedInIcon from '../../img/icons/in-icon.svg';
-import FacebookIcon from '../../img/icons/fa-icon.svg';
-import InstagramIcon from '../../img/icons/inst-icon.svg';
-import SkypeIcon from '../../img/icons/sky-icon.svg';
-import TwitterIcon from '../../img/icons/tvi-icon.svg';
-import PinIcon from '../../img/icons/pi-icon.svg';
+import LinkedInIcon from "../../img/icons/in-icon.svg";
+import FacebookIcon from "../../img/icons/fa-icon.svg";
+import InstagramIcon from "../../img/icons/inst-icon.svg";
+import SkypeIcon from "../../img/icons/sky-icon.svg";
+import TwitterIcon from "../../img/icons/tvi-icon.svg";
+import PinIcon from "../../img/icons/pi-icon.svg";
+import InputEmail from "../../blocks/input-email/input-email";
 
 function Footer() {
   return (
@@ -100,18 +101,10 @@ function Footer() {
             </ul>
           </div>
           <div className="footer__input-contaier">
-            <h3 className="footer__title">Join our mailing list</h3>
-            <div className="input-wrapper">
-              <input
-                id="input"
-                className="input input_footer"
-                type="email"
-                placeholder="your@email.com"
-              />
-              <button type="submit" className="input__button input__button_footer">
-                Sign up
-              </button>
-            </div>
+            <InputEmail
+              type="input_footer"
+              title="Join our mailing list"
+            />
           </div>
         </div>
         <div className="footer__borderline" />

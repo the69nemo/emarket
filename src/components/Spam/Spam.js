@@ -2,6 +2,7 @@ import React from 'react';
 import './Spam.css';
 import '../../blocks/input-email/input-email.css';
 import CheckMarkIcon from '../../img/icons/Checkmark--filled.svg';
+import InputEmail from '../../blocks/input-email/input-email';
 
 function Spam() {
   return (
@@ -23,10 +24,7 @@ function Spam() {
             <span className='spam__icon-text'>Large discounts</span>
           </li>
         </ul>
-        <div className='input-wrapper'>
-          <input id='input' className='input' type='email' placeholder='your@email.com'/>
-          <button type='submit' className='input__button'>Sign up</button>
-        </div>
+        <InputEmail />
       </div>
     </div>
    );

@@ -1,16 +1,16 @@
 .input-wrapper {
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 118px;
 }
 
 .input {
   width: 100%;
-  max-width: 376px;
   height: 56px;
   outline: none;
   padding: 17px 32px;
+  border: 0;
 }
-
 
 .input::placeholder {
   font-family: "Satoshi";
@@ -34,14 +34,13 @@
   background-color: var(--dark-primary);
   cursor: pointer;
   transition: all .5s ease-in-out;
-
 }
 
 .input__button:hover {
   opacity: .5;
 }
 
-.input__button_footer {
+.input__button_input_footer {
   background-color: var(--white);
   color: var(--dark-primary);
   max-width: 118px;
@@ -63,3 +62,10 @@
   color: var(--white);
 }
 
+.input__title {
+  margin: 0 0 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
