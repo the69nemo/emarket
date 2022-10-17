@@ -21,7 +21,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
   grid-template-rows: auto;
-  gap: 26px / 16px;
+  gap: 26px 16px;
 }
 
 .features__card {
@@ -62,8 +62,11 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .features__container {
     padding: 50px 25px;
+  }
+  .features__title {
+    text-align: left;
   }
 }
