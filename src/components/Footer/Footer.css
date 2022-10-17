@@ -45,11 +45,17 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
+  transition: all .5s linear;
 }
 
 .footer__menu-list:not(:last-child),
 .footer__nav-link:not(:last-child) {
   margin-bottom: 12px;
+}
+
+.footer__menu-list:hover,
+.footer__nav-link:hover {
+  opacity: 0.7;
 }
 
 .footer__borderline {
