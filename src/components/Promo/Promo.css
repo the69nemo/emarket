@@ -51,6 +51,10 @@
   .promo__img {
     grid-area: 2 / 1;
   }
+
+  .promo__text-subtitle {
+    margin-bottom: 56px;
+  }
 }
 
 @media screen and (max-width: 800px) {
