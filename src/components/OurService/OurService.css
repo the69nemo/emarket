@@ -1,0 +1,44 @@
+.ourService__container {
+  margin: 0 auto;
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row: 600px;
+}
+
+.ourService__img-wrapper {
+  max-height: 600px;
+}
+
+.ourService__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ourService__text-wrapper {
+  padding: 72px 100px 54px 84px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ourService__text-title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: var(--dark-primary);
+}
+
+.ourService__text-discriprion {
+  margin: 0;
+  margin-top: 25px;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #505977;
+}

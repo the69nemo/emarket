@@ -1,0 +1,54 @@
+.aboutUsBanner__container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 88px 128px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.aboutUsBanner__text {
+  margin: 0;
+  max-width: 704px;
+  color: var(--dark-primary);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 140%;
+}
+
+@media screen and (max-width: 1000px) {
+  .aboutUsBanner__container {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 56px;
+  }
+
+  .aboutUsBanner__text-wrapper {
+    grid-area: 1 / 1 / 2 / 1;
+  }
+
+  .aboutUsBanner__link-wrapper {
+    grid-area: 2 / 1 / 3 / 1;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .aboutUsBanner__container {
+    padding: 50px 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutUsBanner__container {
+    padding: 32px 25px;
+  }
+
+  .aboutUsBanner__link-wrapper {
+    display: flex;
+  }
+
+  .aboutUsBanner__text {
+    font-size: 32px;
+    line-height: 140%;
+  }
+}
