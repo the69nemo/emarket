@@ -82,6 +82,7 @@
 
 .details__text-dimensions-title {
   margin: 0;
+  margin-bottom: 28px;
   font-family: "Clash Display";
   font-style: normal;
   font-weight: 400;
@@ -93,12 +94,14 @@
   display: flex;
 }
 
+
 .details__text-dimensions-parametrs:not(:last-child) {
   margin-right: 58px;
 }
 
 .details__text-dimensions-parametrs-title {
   margin: 0;
+  margin-bottom: 12px;
   font-size: 14px;
   line-height: 17px;
 }
