@@ -3,7 +3,6 @@
   max-width: 1440px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-row: 600px;
 }
 
 .ourService__img-wrapper {
@@ -41,4 +40,40 @@
   font-size: 16px;
   line-height: 22px;
   color: #505977;
+}
+
+@media screen and (max-width: 950px) {
+  .ourService__text-wrapper {
+    padding: 50px 100px 40px 60px;
+  }
+
+  .ourService__text-discriprion:last-child {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .ourService__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .ourService__img-wrapper {
+    max-height: 360px;
+  }
+
+  .ourService__text-wrapper {
+    padding: 50px 25px 60px;
+  }
+
+  .ourService__text-title {
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  .ourService__text-discriprion {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 150%;
+  }
 }
