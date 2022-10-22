@@ -16,14 +16,15 @@
 }
 
 .details__text-wrapper {
-  padding-left: 100px;
-  padding-right: 95px;
+  padding: 90px 100px 80px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .details__text-title {
   margin: 0;
+  margin-bottom: 13px;
   color: var(--dark-primary);
   font-style: normal;
   font-weight: 400;
@@ -50,6 +51,7 @@
 
 .details__text-desriprion-title {
   margin: 0;
+  margin-bottom: 16px;
   font-family: "Clash Display";
   font-style: normal;
   font-weight: 400;
@@ -60,12 +62,14 @@
 
 .details__text-desriprion {
   margin: 0;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 22px;
 }
 
 .details__text-desriprion-list {
   padding: 0;
+  padding-left: 25px;
   margin: 0;
 }
 
@@ -78,6 +82,9 @@
 
 .details__text-dimensions-title {
   margin: 0;
+  font-family: "Clash Display";
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
