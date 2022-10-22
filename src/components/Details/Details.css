@@ -187,3 +187,25 @@
   padding: 16px 32px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1150px) {
+  .details__text-wrapper {
+    padding: 70px 80px 60px;
+  }
+}
+
+@media screen and (max-width: 1071px) {
+  .details__text-wrapper {
+    padding: 70px 80px 50px 60px;
+  }
+
+  .details__text-amount-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .details__text-amount-container {
+    padding-right: 25px;
+    margin-bottom: 16px;
+    margin-top: 32px;
+  }
+}
