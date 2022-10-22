@@ -10,7 +10,7 @@ import Spam from "../Spam/Spam";
 
 function AboutUs() {
   return (
-    <>
+    <div>
       <Header />
       <AboutUsBanner />
       <Promo />
@@ -18,7 +18,7 @@ function AboutUs() {
       <Features />
       <Spam />
       <Footer />
-    </>
+    </div>
    );
 }
 

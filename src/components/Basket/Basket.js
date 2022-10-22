@@ -7,11 +7,11 @@ import BasketCard from '../BasketCard/BasketCard';
 
 function Basket() {
   return (
-    <>
+    <div>
       <Header />
       <BasketCard />
       <Footer />
-    </>
+    </div>
    );
 }
 

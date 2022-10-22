@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 import SearchIcon from "../../img/icons/Search.svg";
 import LogoIcon from "../../img/icons/logo.svg";
 import CartIcon from "../../img/icons/Shopping--cart.svg";
 import UserIcon from "../../img/icons/User--avatar.svg";
-import { Link } from "react-router-dom";
+
 
 function Header() {
   return (
@@ -12,12 +13,14 @@ function Header() {
       <div className="header__container">
         <div className="header__logo-container">
           <img src={SearchIcon} alt="SearchIcon" />
-          <Link to="/aboutus">
+          <Link to="/">
             <img src={LogoIcon} alt="LogoIcon" />
           </Link>
           <ul className="header__icons-container">
             <li className="header__icons-list">
-              <img src={CartIcon} alt="CartIcon" />
+              <Link to="/basket">
+                <img src={CartIcon} alt="CartIcon" />
+              </Link>
             </li>
             <li className="header__icons-list">
               <img src={UserIcon} alt="UserIcon" />

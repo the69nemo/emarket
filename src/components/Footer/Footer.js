@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 import "../../blocks/input-email/input-email.css";
 import LinkedInIcon from "../../img/icons/in-icon.svg";
@@ -74,9 +75,9 @@ function Footer() {
             <h3 className="footer__title">Our company</h3>
             <ul className="footer__menu-lists">
               <li className="footer__menu-list">
-                <a href="javascript:void(0)" className="footer__menu-link">
+                <Link to="/aboutus" className="footer__menu-link">
                   About us
-                </a>
+                </Link>
               </li>
               <li className="footer__menu-list">
                 <a href="javascript:void(0)" className="footer__menu-link">
@@ -101,10 +102,7 @@ function Footer() {
             </ul>
           </div>
           <div className="footer__input-contaier">
-            <InputEmail
-              type="input_footer"
-              title="Join our mailing list"
-            />
+            <InputEmail type="input_footer" title="Join our mailing list" />
           </div>
         </div>
         <div className="footer__borderline" />
