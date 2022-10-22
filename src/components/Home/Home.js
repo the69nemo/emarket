@@ -16,7 +16,7 @@ function Home() {
       <Features />
       <Listings />
       <Promo />
-      <Spam />
+      <Spam type = 'home' />
       <Footer />
     </>
   );

@@ -7,6 +7,14 @@
   justify-content: center;
 }
 
+.spam__type_aboutUs {
+  padding: 50px 80px 60px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  background: var(--light-gray);
+}
+
 .spam__container {
   margin: 0 auto;
   max-width: 544px;
@@ -14,6 +22,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.spam__container_type_aboutUs {
+  padding: 70px 0 50px;
+  max-width: 1440px;
+  background-color: var(--white);
 }
 
 .spam__title {
@@ -38,6 +52,23 @@
   text-align: center;
 }
 
+.spam__title_type_aboutUs,
+.spam__subtitle_type_aboutUs {
+  color: var(--dark-primary);
+}
+
+.spam__title_type_aboutUs {
+  font-size: 36px;
+  line-height: 140%;
+}
+
+.spam__subtitle_type_aboutUs {
+  max-width: 470px;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+}
+
 .spam__icon-list {
   margin: 30px 0 40px;
   padding: 0;
@@ -58,6 +89,16 @@
   font-size: 16px;
   line-height: 150%;
   color: var(--white);
+}
+
+.spam__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spam__input-wrapper {
+  margin-top: 72px;
 }
 
 @media screen and (max-width: 600px) {

@@ -69,3 +69,7 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+.aboutUs {
+  background-color: var(--light-gray);
+}
