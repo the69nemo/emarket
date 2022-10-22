@@ -134,6 +134,15 @@
   color: var(--dark-primary);
 }
 
+.basketCard__table-quantity {
+  margin: 0;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
 .product-total {
   align-self: center;
 }
@@ -267,6 +276,7 @@
 
   .product-quantity {
     justify-content: flex-start;
+    align-items: baseline;
     padding-left: 20px;
   }
 

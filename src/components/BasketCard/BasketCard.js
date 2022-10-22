@@ -33,12 +33,18 @@ function BasketCard() {
                 <p className="basketCard__table-product-price">£85</p>
               </div>
               <div className="basketCard__table-cell product-quantity">
-                <button type="button" className="basketCard__table-button decrement">
+                <button
+                  type="button"
+                  className="basketCard__table-button decrement"
+                >
                   -
                 </button>
                 <p className="basketCard__table-quantity">1</p>
-                <button type="button" className="basketCard__table-button
-increment">
+                <button
+                  type="button"
+                  className="basketCard__table-button
+                  increment"
+                >
                   +
                 </button>
               </div>
