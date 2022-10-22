@@ -1,23 +1,24 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import "./App.css";
 import Home from "../Home/Home";
 import AboutUs from "../AboutUs/AboutUs";
-import Basket from '../Basket/Basket'
+import Basket from "../Basket/Basket";
 
 function App() {
   return (
     <div className="App">
-      <Route path="/" exact>
-        <Home />
-      </Route>
-      <Route path="/aboutus" exact>
-        <AboutUs />
-      </Route>
-      <Route path="/basket" exact>
-        <Basket />
-      </Route>
-
+      <Switch>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+        <Route path="/aboutus">
+          <AboutUs />
+        </Route>
+        <Route path="/basket">
+          <Basket />
+        </Route>
+      </Switch>
     </div>
   );
 }
