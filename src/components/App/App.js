@@ -12,10 +12,10 @@ function App() {
         <Route path="/" exact>
           <Home />
         </Route>
-        <Route path="/aboutus">
+        <Route path="/aboutus" exact>
           <AboutUs />
         </Route>
-        <Route path="/basket">
+        <Route path="/basket" exact>
           <Basket />
         </Route>
       </Switch>
