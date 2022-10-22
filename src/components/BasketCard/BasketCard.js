@@ -33,11 +33,12 @@ function BasketCard() {
                 <p className="basketCard__table-product-price">£85</p>
               </div>
               <div className="basketCard__table-cell product-quantity">
-                <button type="button" className="basketCard__table-button">
+                <button type="button" className="basketCard__table-button decrement">
                   -
                 </button>
                 <p className="basketCard__table-quantity">1</p>
-                <button type="button" className="basketCard__table-button">
+                <button type="button" className="basketCard__table-button
+increment">
                   +
                 </button>
               </div>
@@ -46,6 +47,18 @@ function BasketCard() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="basketCard-subtotal-container">
+          <div className="basketCard-subtotal__price-wrapper">
+            <p className="basketCard-subtotal__price-text">Subtotal</p>
+            <p className="basketCard-subtotal__price">£210</p>
+          </div>
+          <p className="basketCard-subtotal__discriprion">
+            Taxes and shipping are calculated at checkout
+          </p>
+          <button type="button" className="basketCard-subtotal__button">
+            Go to checkout
+          </button>
         </div>
       </div>
     </div>
