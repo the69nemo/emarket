@@ -126,4 +126,22 @@
   .spam__icon-list {
     flex-direction: column;
   }
+
+  .spam__type_aboutUs {
+    background-color: var(--white);
+    padding: 0;
+  }
+
+  .spam__container_type_aboutUs {
+    padding: 48px 25px 38px;
+  }
+
+  .spam__text-wrapper {
+    align-items: flex-start;
+  }
+
+  .spam__title_type_aboutUs {
+    font-size: 20px;
+    line-height: 140%;
+  }
 }

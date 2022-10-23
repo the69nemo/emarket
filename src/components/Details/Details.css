@@ -279,5 +279,14 @@
     width: 100%;
   }
 
+  .details__text-dimensions-parametrs-value {
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
 
+@media screen and (max-width: 430px) {
+  .details__text-dimensions-container {
+    justify-content: space-between;
+  }
 }
