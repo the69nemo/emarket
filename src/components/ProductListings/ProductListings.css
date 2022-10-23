@@ -1,4 +1,6 @@
 .product-listings__container {
+  max-width: 1440px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: minmax(230px, 385px) 1fr;
 }
