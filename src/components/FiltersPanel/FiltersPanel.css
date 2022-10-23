@@ -34,3 +34,9 @@
 .filtersPanel__filter {
   margin-right: 12px;
 }
+
+@media screen and (max-width: 695px) {
+  .filtersPanel {
+    display: none;
+  }
+}

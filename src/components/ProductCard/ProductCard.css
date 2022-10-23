@@ -1,0 +1,36 @@
+.card {
+  max-width: 305px;
+  min-width: 163px;
+  max-height: 462px;
+  min-height: 288px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: all 0.5s linear;
+}
+
+.card__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__title {
+  margin: 24px 0 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--dark-primary);
+}
+
+.card_price {
+  margin: 8px 0 0;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--dark-primary);
+}

@@ -1,11 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./link-view.css";
+
 
 function LinkView({ type, text }) {
   return (
-    <a className={`link-view && ${type}`} href="#">
+    <Link to='/productlistings' className={`link-view && ${type}`} href="#">
       {text}
-    </a>
+    </Link>
   );
 }
 
