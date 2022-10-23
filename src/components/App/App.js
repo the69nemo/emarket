@@ -5,6 +5,7 @@ import Home from "../Home/Home";
 import AboutUs from "../AboutUs/AboutUs";
 import Basket from "../Basket/Basket";
 import Product from "../Product/Product";
+import ProductListings from "../ProductListings/ProductListings";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         </Route>
         <Route path='/product' exact>
           <Product />
+        </Route>
+        <Route path='/productlistings' exact>
+          <ProductListings />
         </Route>
       </Switch>
     </div>

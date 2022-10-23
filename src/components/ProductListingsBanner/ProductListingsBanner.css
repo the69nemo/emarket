@@ -1,0 +1,30 @@
+.banner {
+  background: url(../../img/images/banner_bg.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.banner__container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 120px 80px 36px;
+}
+
+.banner__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 140%;
+  color: var(--white);
+}
+
+@media screen and (max-width: 600px) {
+  .banner__container {
+    padding: 64px 0 32px;
+  }
+
+  .banner__title {
+    text-align: center;
+  }
+
+}
