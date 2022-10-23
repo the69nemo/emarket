@@ -1,0 +1,12 @@
+.product-listings__container {
+  display: grid;
+  grid-template-columns: 385px 1fr;
+}
+
+.product-listings__panel {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.product-listings__lists {
+  grid-area: 1 / 2 / 2 / 3;
+}
