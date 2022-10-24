@@ -19,27 +19,27 @@ function Footer() {
             <h3 className="footer__title">Menu</h3>
             <ul className="footer__menu-lists">
               <li className="footer__menu-list">
-                <a href="javascript:void(0)" className="footer__menu-link">
+                <a href="#" className="footer__menu-link">
                   New arrivals
                 </a>
               </li>
               <li className="footer__menu-list">
-                <a href="javascript:void(0)" className="footer__menu-link">
+                <a href="#" className="footer__menu-link">
                   Best sellers
                 </a>
               </li>
               <li className="footer__menu-list">
-                <a href="javascript:void(0)" className="footer__menu-link">
+                <a href="#" className="footer__menu-link">
                   Recently viewed
                 </a>
               </li>
               <li className="footer__menu-list">
-                <a href="javascript:void(0)" className="footer__menu-link">
+                <a href="#" className="footer__menu-link">
                   Popular this week
                 </a>
               </li>
               <li className="footer__menu-list">
-                <a href="javascript:void(0)" className="footer__menu-link">
+                <a href="#" className="footer__menu-link">
                   All products
                 </a>
               </li>
@@ -48,25 +48,25 @@ function Footer() {
           <div className="footer__menu">
             <h3 className="footer__title">Categories</h3>
             <nav className="footer__nav">
-              <a href="javascript:void(0)" className="footer__nav-link">
+              <a href="#" className="footer__nav-link">
                 Plant pots
               </a>
-              <a href="javascript:void(0)" className="footer__nav-link">
+              <a href="#" className="footer__nav-link">
                 Ceramics
               </a>
-              <a href="javascript:void(0)" className="footer__nav-link">
+              <a href="#" className="footer__nav-link">
                 Tables
               </a>
-              <a href="javascript:void(0)" className="footer__nav-link">
+              <a href="#" className="footer__nav-link">
                 Chairs
               </a>
-              <a href="javascript:void(0)" className="footer__nav-link">
+              <a href="#" className="footer__nav-link">
                 Crockery
               </a>
-              <a href="javascript:void(0)" className="footer__nav-link">
+              <a href="#" className="footer__nav-link">
                 Tableware
               </a>
-              <a href="javascript:void(0)" className="footer__nav-link">
+              <a href="#" className="footer__nav-link">
                 Cutlery
               </a>
             </nav>
@@ -80,22 +80,22 @@ function Footer() {
                 </Link>
               </li>
               <li className="footer__menu-list">
-                <a href="javascript:void(0)" className="footer__menu-link">
+                <a href="#" className="footer__menu-link">
                   Vacancies
                 </a>
               </li>
               <li className="footer__menu-list">
-                <a href="javascript:void(0)" className="footer__menu-link">
+                <a href="#" className="footer__menu-link">
                   Contact us
                 </a>
               </li>
               <li className="footer__menu-list">
-                <a href="javascript:void(0)" className="footer__menu-link">
+                <a href="#" className="footer__menu-link">
                   Privacy
                 </a>
               </li>
               <li className="footer__menu-list">
-                <a href="javascript:void(0)" className="footer__menu-link">
+                <a href="#" className="footer__menu-link">
                   Returns policy
                 </a>
               </li>

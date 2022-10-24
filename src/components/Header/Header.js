@@ -29,25 +29,25 @@ function Header() {
         </div>
         <div className="header__border-line" />
         <nav className="header__nav">
-          <a href="javascript:void(0)" className="header__nav-link">
+          <a href="#" className="header__nav-link">
             Plant pots
           </a>
-          <a href="javascript:void(0)" className="header__nav-link">
+          <a href="#" className="header__nav-link">
             Ceramics
           </a>
-          <a href="javascript:void(0)" className="header__nav-link">
+          <a href="#" className="header__nav-link">
             Tables
           </a>
-          <a href="javascript:void(0)" className="header__nav-link">
+          <a href="#" className="header__nav-link">
             Chairs
           </a>
-          <a href="javascript:void(0)" className="header__nav-link">
+          <a href="#" className="header__nav-link">
             Crockery
           </a>
-          <a href="javascript:void(0)" className="header__nav-link">
+          <a href="#" className="header__nav-link">
             Tableware
           </a>
-          <a href="javascript:void(0)" className="header__nav-link">
+          <a href="#" className="header__nav-link">
             Cutlery
           </a>
         </nav>
