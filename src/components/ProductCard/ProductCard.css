@@ -8,10 +8,16 @@
   transition: all 0.5s linear;
 }
 
+.card__link {
+  text-decoration: none;
+  color: var(--dark-primary);
+}
+
 .card__img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+
 }
 
 .card__title {
@@ -20,7 +26,6 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
-  color: var(--dark-primary);
 }
 
 .card_price {
@@ -30,9 +35,4 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  color: var(--dark-primary);
-}
-
-.card__link {
-  text-decoration: none;
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import "./ProductCard.css";
-import One from "../../img/images/listings-img/1.jpg";
 import { Link } from "react-router-dom";
 
 

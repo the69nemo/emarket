@@ -14,7 +14,6 @@ function ProductsLists() {
     />
   ));
 
-
   return (
     <div className="productsLists">
       <div className="productsLists__container">
