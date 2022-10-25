@@ -95,9 +95,9 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 950px) {
   .burgerMenu {
-    visibility: hidden;
+    display: none;
   }
 }
 
