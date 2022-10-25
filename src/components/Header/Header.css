@@ -9,6 +9,15 @@
   padding: 20px 28px;
 }
 
+.header__top {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header__bottom {
+  padding-top: 20px;
+}
+
 .header__logo-container {
   display: flex;
   justify-content: space-between;
@@ -17,6 +26,7 @@
 
 .header__icons-container {
   margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: nowrap;
@@ -24,13 +34,6 @@
 
 .header__icons-list:not(:last-child) {
   margin-right: 16px;
-}
-
-.header__border-line {
-  margin: 20px 0;
-  height: 1px;
-  width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .header__nav {
@@ -72,4 +75,34 @@
 
 .header__nav-link:hover::after {
   transform: scaleX(1);
+}
+
+.header__burger-btn {
+  height: 16px;
+  width: 16px;
+  background-color: transparent;
+  background: url(../../img/icons/burgerMenu.svg) no-repeat center;
+  border: 0;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .header__container {
+    padding: 20px 25px;
+  }
+
+  .header__icons-container,
+  .header__bottom {
+    display: none;
+  }
+
+  .header__top {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .header__burger-btn {
+    display: block;
+  }
 }
