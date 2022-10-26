@@ -14,14 +14,21 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.header__search {
+  width: 48%;
+}
+
 .header__bottom {
   padding-top: 20px;
 }
 
 .header__logo-container {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: auto;
 }
 
 .header__icons-container {
@@ -114,7 +121,12 @@
   }
 
   .header__logo {
+    margin-right: 0;
     justify-self: flex-start;
     grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .header__search {
+    width: auto;
   }
 }

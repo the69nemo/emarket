@@ -6,6 +6,7 @@ import LogoIcon from "../../img/icons/logo.svg";
 import CartIcon from "../../img/icons/Shopping--cart.svg";
 import UserIcon from "../../img/icons/User--avatar.svg";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
+import SearchBox from "../SearchBox/SearchBox";
 
 function Header() {
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
@@ -17,7 +18,10 @@ function Header() {
       <div className="header__container">
         <div className="header__top">
           <div className="header__logo-container">
-            <img src={SearchIcon} alt="SearchIcon" className="header__search" />
+            <div className="header__search" >
+              <SearchBox />
+            </div>
+            {/* <img src={SearchIcon} alt="SearchIcon" className="header__search" /> */}
             <Link to="/" className="header__logo">
               <img src={LogoIcon} alt="LogoIcon" />
             </Link>
