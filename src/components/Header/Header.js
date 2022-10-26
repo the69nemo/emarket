@@ -17,8 +17,8 @@ function Header() {
       <div className="header__container">
         <div className="header__top">
           <div className="header__logo-container">
-            <img src={SearchIcon} alt="SearchIcon" />
-            <Link to="/">
+            <img src={SearchIcon} alt="SearchIcon" className="header__search" />
+            <Link to="/" className="header__logo">
               <img src={LogoIcon} alt="LogoIcon" />
             </Link>
             <ul className="header__icons-container">

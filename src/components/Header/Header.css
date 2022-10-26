@@ -105,4 +105,16 @@
   .header__burger-btn {
     display: block;
   }
+
+  .header__logo-container {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 40px);
+    align-items: center;
+    justify-items: end;
+  }
+
+  .header__logo {
+    justify-self: flex-start;
+    grid-area: 1 / 1 / 2 / 2;
+  }
 }
