@@ -16,19 +16,19 @@ function App() {
           <ScrollToTop />
           <Home />
         </Route>
-        <Route path="/aboutus" exact>
+        <Route path="/aboutus" >
           <ScrollToTop />
           <AboutUs />
         </Route>
-        <Route path="/basket" exact>
+        <Route path="/basket" >
           <ScrollToTop />
           <Basket />
         </Route>
-        <Route path="/product" exact>
+        <Route path="/product/:id">
           <ScrollToTop />
           <Product />
         </Route>
-        <Route path="/productlistings" exact>
+        <Route path="/productlistings" >
           <ScrollToTop />
           <ProductListings />
         </Route>

@@ -21,7 +21,6 @@ function Header() {
             <div className="header__search" >
               <SearchBox />
             </div>
-            {/* <img src={SearchIcon} alt="SearchIcon" className="header__search" /> */}
             <Link to="/" className="header__logo">
               <img src={LogoIcon} alt="LogoIcon" />
             </Link>

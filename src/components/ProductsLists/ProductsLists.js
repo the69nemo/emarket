@@ -11,6 +11,7 @@ function ProductsLists() {
       alt={card.name}
       src={card.img}
       prise={card.prise}
+      id={card.id}
     />
   ));
 
