@@ -1,6 +1,5 @@
 import React from "react";
 import "./Details.css";
-import Img from "../../img/images/eugene-chystiakov-3neSwyntbQ8-unsplash.jpg";
 import { useParams } from "react-router-dom";
 import data from '../../data/data.json'
 

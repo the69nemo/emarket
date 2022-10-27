@@ -5,7 +5,11 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  transition: all 0.5s linear;
+  transition: box-shadow 0.15s linear;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 11px 10px rgba(34, 60, 80, 0.21);
 }
 
 .card__link {
@@ -17,19 +21,18 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
-
 }
 
 .card__title {
-  margin: 24px 0 0;
+  margin: 24px 0 0 5px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
 }
 
-.card_price {
-  margin: 8px 0 0;
+.card__price {
+  margin: 8px 0 0 5px;
   font-family: "Satoshi";
   font-style: normal;
   font-weight: 400;

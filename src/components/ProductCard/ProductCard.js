@@ -10,7 +10,7 @@ function ProductCard({ title, alt, src, prise, id }) {
       <div className="card">
         <img className="card__img" src={src} alt={alt} />
         <h3 className="card__title">{title}</h3>
-        <span className="card__price">{`£${prise}`}</span>
+        <p className="card__price">{`£${prise}`}</p>
       </div>
     </Link>
   );
