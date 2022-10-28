@@ -6,14 +6,17 @@ import ProductListingsBanner from '../ProductListingsBanner/ProductListingsBanne
 import FiltersPanel from '../FiltersPanel/FiltersPanel';
 import ProductsLists from '../ProductsLists/ProductsLists';
 
-function ProductListings() {
+function ProductListings({ allData, setChoosenProduct }) {
   return (
     <>
       <Header />
       <ProductListingsBanner />
       <div className='product-listings__container'>
         <FiltersPanel className='product-listings__panel' />
-        <ProductsLists className='product-listings__lists' />
+        <ProductsLists
+          className='product-listings__lists'
+          allData = {allData}
+        />
       </div>
       <Footer />
     </>

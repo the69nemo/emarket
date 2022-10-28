@@ -1,10 +1,10 @@
 import React from "react";
 import "./ProductsLists.css";
 import ProductCard from "../ProductCard/ProductCard";
-import data from "../../data/data.json";
 
-function ProductsLists() {
-  const cards = data.map((card) => (
+function ProductsLists({ allData }) {
+  
+  const cards = allData.map((card) => (
     <ProductCard
       key={card.id}
       title={card.name}
