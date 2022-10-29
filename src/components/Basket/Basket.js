@@ -2,14 +2,17 @@ import React from 'react';
 import './Basket.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import BasketCard from '../BasketCard/BasketCard';
+import BasketCardList from '../BasketCardList/BasketCardList';
 
 
-function Basket() {
+function Basket({ productInBasket }) {
+
   return (
     <div>
       <Header />
-      <BasketCard />
+      <BasketCardList
+        productInBasket = {productInBasket}
+      />
       <Footer />
     </div>
    );

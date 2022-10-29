@@ -30,7 +30,9 @@ function App() {
         </Route>
         <Route path="/basket" >
           <ScrollToTop />
-          <Basket />
+          <Basket
+            productInBasket={productInBasket}
+          />
         </Route>
         <Route path="/product/:id">
           <ScrollToTop />

@@ -1,0 +1,51 @@
+.basketCard-container {
+  margin: 0 auto;
+  padding: 64px 190px 48px;
+  max-width: 1440px;
+}
+
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+
+.basket__empty-basket-title {
+  margin: 0;
+  padding: 0;
+  color: var(--dark-primary);
+}
+
+.basketCard__table-container {
+  max-width: 1064px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ebe8f4;
+  padding-bottom: 12px;
+}
+
+.basketCard__table-head {
+  display: grid;
+  grid-template-columns: 109px 1fr 122px 290px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ebe8f4;
+  margin-bottom: 20px;
+}
+
+.basketCard__table-cell-head {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--dark-primary);
+}
+
+.basketCard__table-cell-head:nth-child(1) {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.basketCard__table-cell-head:last-child {
+  text-align: right;
+}
+
