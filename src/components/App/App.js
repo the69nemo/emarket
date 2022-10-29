@@ -7,15 +7,17 @@ import AboutUs from "../AboutUs/AboutUs";
 import Basket from "../Basket/Basket";
 import Product from "../Product/Product";
 import ProductListings from "../ProductListings/ProductListings";
-import data from '../../data/data.json'
+import data from "../../data/data.json";
 
 function App() {
   const [allData, setAllData] = useState(data);
-  const [productInBasket, setProductInBasket] = useState([]);
+  const [productInBasket, setProductInBasket] = useState(
+    localStorage.getItem("productInBasket") || []
+  );
 
-  const handleAddProductInBasket = (product) => setProductInBasket([...productInBasket, ...product])
-
-  console.log(productInBasket)
+  const handleAddProductInBasket = (product) => {
+    setProductInBasket([...productInBasket, ...product]);
+  };
 
   return (
     <div className="App">
@@ -24,28 +26,24 @@ function App() {
           <ScrollToTop />
           <Home />
         </Route>
-        <Route path="/aboutus" >
+        <Route path="/aboutus">
           <ScrollToTop />
           <AboutUs />
         </Route>
-        <Route path="/basket" >
+        <Route path="/basket">
           <ScrollToTop />
-          <Basket
-            productInBasket={productInBasket}
-          />
+          <Basket productInBasket={productInBasket} />
         </Route>
         <Route path="/product/:id">
           <ScrollToTop />
           <Product
-            handleAddProductInBasket = {handleAddProductInBasket}
-            allData = {allData}
+            handleAddProductInBasket={handleAddProductInBasket}
+            allData={allData}
           />
         </Route>
-        <Route path="/productlistings" >
+        <Route path="/productlistings">
           <ScrollToTop />
-          <ProductListings
-            allData = {allData}
-          />
+          <ProductListings allData={allData} />
         </Route>
       </Switch>
     </div>

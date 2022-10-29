@@ -26,7 +26,6 @@
 
 .listings__card:hover {
   opacity: 0.8;
-  transform: translateY(-25px) skew(0.7deg);
 }
 
 .listings__card-img {

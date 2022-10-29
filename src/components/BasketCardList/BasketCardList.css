@@ -2,13 +2,13 @@
   margin: 0 auto;
   padding: 64px 190px 48px;
   max-width: 1440px;
+  width: 100%;
 }
 
 .empty {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40vh;
 }
 
 .basket__empty-basket-title {

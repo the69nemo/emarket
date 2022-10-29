@@ -8,7 +8,7 @@ import BasketCardList from '../BasketCardList/BasketCardList';
 function Basket({ productInBasket }) {
 
   return (
-    <div>
+    <div className='basket'>
       <Header />
       <BasketCardList
         productInBasket = {productInBasket}
