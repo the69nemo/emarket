@@ -15,7 +15,7 @@ function App() {
   const [productInBasket, setProductInBasket] = useState(
     localStorage.getItem("productInBasket") || []
   );
-  const [isPopupOpen, setIsPopupOpen] = useState(false)
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const handleAddProductInBasket = (product) => {
     setProductInBasket([...productInBasket, ...product]);
@@ -23,43 +23,44 @@ function App() {
 
   const handleOpenPopup = () => setIsPopupOpen(!isPopupOpen);
 
-
   return (
     <div className="App">
       <Switch>
         <Route path="/" exact>
           <ScrollToTop />
-          <Home
-            handleOpenPopup={handleOpenPopup}
-          />
+          <Home handleOpenPopup={handleOpenPopup} />
         </Route>
         <Route path="/aboutus">
           <ScrollToTop />
-          <AboutUs />
+          <AboutUs handleOpenPopup={handleOpenPopup} />
         </Route>
         <Route path="/basket">
           <ScrollToTop />
-          <Basket productInBasket={productInBasket} />
+          <Basket
+            productInBasket={productInBasket}
+            handleOpenPopup={handleOpenPopup}
+          />
         </Route>
         <Route path="/product/:id">
           <ScrollToTop />
           <Product
             handleAddProductInBasket={handleAddProductInBasket}
             allData={allData}
+            handleOpenPopup={handleOpenPopup}
           />
         </Route>
         <Route path="/productlistings">
           <ScrollToTop />
-          <ProductListings allData={allData} />
+          <ProductListings
+            allData={allData}
+            handleOpenPopup={handleOpenPopup}
+          />
         </Route>
         {/* <Route path='/login'>
           <Form />
         </Route> */}
       </Switch>
-      <Form
-        isPopupOpen={isPopupOpen}
-        handleOpenPopup={handleOpenPopup}
-      />
+      <Form isPopupOpen={isPopupOpen} handleOpenPopup={handleOpenPopup} />
     </div>
   );
 }

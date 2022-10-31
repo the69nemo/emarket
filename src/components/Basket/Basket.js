@@ -5,11 +5,13 @@ import Footer from '../Footer/Footer';
 import BasketCardList from '../BasketCardList/BasketCardList';
 
 
-function Basket({ productInBasket }) {
+function Basket({ productInBasket, handleOpenPopup }) {
 
   return (
     <div className='basket'>
-      <Header />
+      <Header
+        handleOpenPopup={handleOpenPopup}
+      />
       <BasketCardList
         productInBasket = {productInBasket}
       />

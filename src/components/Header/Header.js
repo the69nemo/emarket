@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
-import SearchIcon from "../../img/icons/Search.svg";
 import LogoIcon from "../../img/icons/logo.svg";
 import CartIcon from "../../img/icons/Shopping--cart.svg";
-import UserIcon from "../../img/icons/User--avatar.svg";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import SearchBox from "../SearchBox/SearchBox";
 
@@ -66,6 +64,7 @@ function Header({ handleOpenPopup }) {
       <BurgerMenu
         isBurgerMenuOpen = {isBurgerMenuOpen}
         handleBurgerMenuOpen = {handleBurgerMenuOpen}
+        handleOpenPopup={handleOpenPopup}
       />
     </header>
   );

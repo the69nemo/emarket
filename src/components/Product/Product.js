@@ -7,10 +7,12 @@ import Spam from '../Spam/Spam';
 import Features from '../Features/Features';
 import Details from '../Details/Details';
 
-function Product({ handleAddProductInBasket, allData }) {
+function Product({ handleAddProductInBasket, allData, handleOpenPopup }) {
   return (
     <>
-      <Header />
+      <Header
+        handleOpenPopup={handleOpenPopup}
+      />
       <Details
         handleAddProductInBasket = {handleAddProductInBasket}
         allData = {allData}

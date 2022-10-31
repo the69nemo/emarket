@@ -8,10 +8,12 @@ import AboutUsBanner from '../AboutUsBanner/AboutUsBanner';
 import OurService from '../OurService/OurService';
 import Spam from "../Spam/Spam";
 
-function AboutUs() {
+function AboutUs({ handleOpenPopup }) {
   return (
     <div>
-      <Header />
+      <Header
+        handleOpenPopup={handleOpenPopup}
+      />
       <AboutUsBanner />
       <Promo />
       <OurService />

@@ -6,10 +6,12 @@ import ProductListingsBanner from '../ProductListingsBanner/ProductListingsBanne
 import FiltersPanel from '../FiltersPanel/FiltersPanel';
 import ProductsLists from '../ProductsLists/ProductsLists';
 
-function ProductListings({ allData, setChoosenProduct }) {
+function ProductListings({ allData, handleOpenPopup }) {
   return (
     <>
-      <Header />
+      <Header
+        handleOpenPopup={handleOpenPopup}
+      />
       <ProductListingsBanner />
       <div className='product-listings__container'>
         <FiltersPanel className='product-listings__panel' />
