@@ -21,7 +21,7 @@ function Form({ isPopupOpen, handleOpenPopup }) {
           <input className='form__input email' type='email' id="email" placeholder="Enter your email" />
           <input className="form__input password" type='password' id='password' placeholder="Enter your password" />
         </form>
-        <button type="submit" for="form" className="form__button">Create account</button>
+        <button type="submit" htmlFor="form" className="form__button">Create account</button>
         <button type="button" className="form__button-close" onClick={handleOpenPopup}/>
       </div>
     </div>
