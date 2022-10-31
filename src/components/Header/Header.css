@@ -94,6 +94,15 @@
   display: none;
 }
 
+.header__popup-btn {
+  height: 16px;
+  width: 16px;
+  background-color: transparent;
+  background: url(../../img/icons/User--avatar.svg) no-repeat center;
+  border: 0;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 950px) {
   .header__container {
     padding: 20px 25px;

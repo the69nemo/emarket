@@ -8,7 +8,7 @@ import UserIcon from "../../img/icons/User--avatar.svg";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import SearchBox from "../SearchBox/SearchBox";
 
-function Header() {
+function Header({ handleOpenPopup }) {
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
 
   const handleBurgerMenuOpen = () => setIsBurgerMenuOpen(!isBurgerMenuOpen);
@@ -31,7 +31,7 @@ function Header() {
                 </Link>
               </li>
               <li className="header__icons-list">
-                <img src={UserIcon} alt="UserIcon" />
+                <button type='button' className="header__popup-btn" onClick={handleOpenPopup}/>
               </li>
             </ul>
             <button type="button" className="header__burger-btn" onClick={handleBurgerMenuOpen} />

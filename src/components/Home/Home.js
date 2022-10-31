@@ -8,10 +8,12 @@ import Promo from "../Promo/Promo";
 import Spam from "../Spam/Spam";
 import Footer from "../Footer/Footer";
 
-function Home() {
+function Home({ handleOpenPopup }) {
   return (
     <>
-      <Header />
+      <Header
+        handleOpenPopup={handleOpenPopup}
+      />
       <Hero />
       <Features />
       <Listings />
