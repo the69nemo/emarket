@@ -24,7 +24,7 @@ function ProductsLists({ allData }) {
   }, [allData]);
 
   useEffect(() => {
-    if (currentCards > allData.length || currentCards == allData.length) {
+    if (currentCards > allData.length || currentCards === allData.length) {
       setHiddenButton(true);
     }
   }, [currentCards])
