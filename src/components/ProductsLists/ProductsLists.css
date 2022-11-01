@@ -29,6 +29,10 @@
   cursor: pointer;
 }
 
+.productsLists__button_hidden {
+  display: none;
+}
+
 @media screen and (max-width: 1140px) {
   .productsLists__container {
     grid-template-columns: repeat(2, minmax(163px, 305px));
