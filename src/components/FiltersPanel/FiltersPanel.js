@@ -3,7 +3,7 @@ import "./FiltersPanel.css";
 
 function FiltersPanel() {
   return (
-    <div className="filtersPanel">
+    <div className='filtersPanel' >
       <div className="filtersPanel__container">
         <fieldset className="filtersPanel__filters-group">
           <legend className="filtersPanel__filter-title">Product type</legend>

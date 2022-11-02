@@ -1,0 +1,82 @@
+.filtersSidePanel {
+  height: 100%;
+  width: 60%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 15;
+  background-color: var(--light-gray);
+  transition: 0.5s;
+  transform: translateX(-100%);
+  overflow-y: auto;
+}
+
+.open {
+  transform: translateX(0%);
+}
+
+.filtersSidePanel.open {
+  transform: scaleX(1);
+}
+
+.filtersSidePanel__container {
+  padding: 48px 0 0 80px;
+}
+
+.filtersSidePanel__filters-group {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 48px;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.filtersSidePanel__filter-title {
+  margin-bottom: 20px;
+  font-family: "Clash Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--dark-primary);
+}
+
+.filtersSidePanel__filter-name {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--dark-primary);
+}
+
+.filtersSidePanel__filter {
+  margin-right: 12px;
+}
+
+.filtersSidePanel__close-btn {
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  height: 30px;
+  width: 30px;
+  background: url(.././../img/icons/close.svg) no-repeat center;
+}
+
+@media screen and (min-width: 950px) {
+  .filtersSidePanel {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .filtersSidePanel {
+    width: 100%;
+  }
+}

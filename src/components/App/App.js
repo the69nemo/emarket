@@ -56,9 +56,6 @@ function App() {
             handleOpenPopup={handleOpenPopup}
           />
         </Route>
-        {/* <Route path='/login'>
-          <Form />
-        </Route> */}
       </Switch>
       <Form isPopupOpen={isPopupOpen} handleOpenPopup={handleOpenPopup} />
     </div>

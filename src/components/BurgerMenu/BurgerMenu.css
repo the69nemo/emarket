@@ -10,6 +10,7 @@
   background-color: var(--light-gray);
   transition: 0.5s;
   transform: translateX(100%);
+  overflow-y: auto;
 }
 
 .open {
