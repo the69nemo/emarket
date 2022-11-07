@@ -37,27 +37,27 @@ function Header({ handleOpenPopup }) {
         </div>
         <div className="header__bottom">
           <nav className="header__nav">
-            <a href="#" className="header__nav-link">
+            <Link to='./nolinks' className="header__nav-link">
               Plant pots
-            </a>
-            <a href="#" className="header__nav-link">
+            </Link>
+            <Link to='./nolinks' className="header__nav-link">
               Ceramics
-            </a>
-            <a href="#" className="header__nav-link">
+            </Link>
+            <Link to='./nolinks' className="header__nav-link">
               Tables
-            </a>
-            <a href="#" className="header__nav-link">
+            </Link>
+            <Link to='./nolinks' className="header__nav-link">
               Chairs
-            </a>
-            <a href="#" className="header__nav-link">
+            </Link>
+            <Link to='./nolinks' className="header__nav-link">
               Crockery
-            </a>
-            <a href="#" className="header__nav-link">
+            </Link>
+            <Link to='./nolinks' className="header__nav-link">
               Tableware
-            </a>
-            <a href="#" className="header__nav-link">
+            </Link>
+            <Link to='./nolinks' className="header__nav-link">
               Cutlery
-            </a>
+            </Link>
           </nav>
         </div>
       </div>
