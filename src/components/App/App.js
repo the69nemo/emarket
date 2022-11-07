@@ -9,6 +9,7 @@ import Product from "../Product/Product";
 import ProductListings from "../ProductListings/ProductListings";
 import data from "../../data/data.json";
 import Form from "../Form/Form";
+import PageNotFound from "../PageNotFound/PageNotFound";
 
 function App() {
   const [allData, setAllData] = useState(data);
@@ -55,6 +56,9 @@ function App() {
             allData={allData}
             handleOpenPopup={handleOpenPopup}
           />
+        </Route>
+        <Route path="*">
+          <PageNotFound />
         </Route>
       </Switch>
       <Form isPopupOpen={isPopupOpen} handleOpenPopup={handleOpenPopup} />
