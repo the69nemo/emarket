@@ -10,9 +10,23 @@ import FiltersSidePanel from "../FiltersSidePanel/FiltersSidePanel";
 function ProductListings({ allData, handleOpenPopup }) {
   const [isFilterMenuOpen, setIsFilterMenuOpen] = useState(false);
   const [isSortingOpen, setIsSortingOpen] = useState(false);
+  const [currentProduct, setCurrentProduct] = useState(allData);
+  const [filterParam, setFilterParam] = useState([])
 
   const handleFilterMenu = () => setIsFilterMenuOpen(!isFilterMenuOpen);
   const handleSortingMenu = () => setIsSortingOpen(!isSortingOpen);
+
+  const handleFilterCurrentProduct = () => {
+    const filteredProduct = [];
+    for (let i = 0; i < filterParam.length; i++) {
+      const filter = allData.filter((elem) => {
+        console.log(elem.type);
+        return elem.type === filterParam[i]
+      })
+      filteredProduct.push(filter)
+    }
+    setCurrentProduct(filteredProduct)
+  }
 
   return (
     <>
@@ -45,8 +59,12 @@ function ProductListings({ allData, handleOpenPopup }) {
       <div className="product-listings__container">
         <FiltersPanel
           className="product-listings__panel"
+          filterParam={filterParam}
+          // currentProduct={currentProduct}
+          setFilterParam={setFilterParam}
+          handleFilterCurrentProduct={handleFilterCurrentProduct}
         />
-        <ProductsLists className="product-listings__lists" allData={allData} />
+        <ProductsLists className="product-listings__lists" allData={currentProduct} />
       </div>
       <Footer />
     </>

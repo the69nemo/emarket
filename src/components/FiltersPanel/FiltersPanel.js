@@ -1,7 +1,44 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./FiltersPanel.css";
 
-function FiltersPanel() {
+function FiltersPanel({ filterParam, setFilterParam, handleFilterCurrentProduct }) {
+
+  const [inputValue, setInputValue] = useState();
+  const [checked, setChecked] = useState(
+    new Array(13).fill(false)
+  );
+
+  const filterValue = (event) => {
+    setInputValue(event.target.value);
+  }
+
+  const handleChangeChecked = (position) => {
+
+    const updatedCheckedState = checked.map((item, index) =>
+      index === position ? !item : item);
+
+    setChecked(updatedCheckedState);
+
+    const index = filterParam.indexOf(inputValue)
+    const newFilterParam = [...filterParam]
+    console.log(newFilterParam)
+    if (index !== -1) {
+      newFilterParam.splice(index, 1)
+    } else {
+      newFilterParam.push(inputValue)
+    }
+
+    setFilterParam(newFilterParam)
+
+    handleFilterCurrentProduct()
+
+
+
+    // console.log(eventValue)
+    // const filters = updatedCheckedState.
+
+  }
+
   return (
     <div className='filtersPanel' >
       <div className="filtersPanel__container">
@@ -13,6 +50,9 @@ function FiltersPanel() {
               type="checkbox"
               name="furniture"
               value="furniture"
+              checked={checked[0]}
+              onChange={() => handleChangeChecked(0)}
+              onClick={filterValue}
             />
             Furniture
           </label>
@@ -22,6 +62,9 @@ function FiltersPanel() {
               type="checkbox"
               name="homeware"
               value="homeware"
+              checked={checked[1]}
+              onChange={() => handleChangeChecked(1)}
+              onClick={filterValue}
             />
             Homeware
           </label>
@@ -31,6 +74,9 @@ function FiltersPanel() {
               type="checkbox"
               name="sofas"
               value="sofas"
+              checked={checked[2]}
+              onChange={() => handleChangeChecked(2)}
+              onClick={filterValue}
             />
             Sofas
           </label>
@@ -40,6 +86,9 @@ function FiltersPanel() {
               type="checkbox"
               name="fittings"
               value="fittings"
+              checked={checked[3]}
+              onChange={() => handleChangeChecked(3)}
+              onClick={filterValue}
             />
             Light fittings
           </label>
@@ -49,6 +98,9 @@ function FiltersPanel() {
               type="checkbox"
               name="accessories"
               value="accessories"
+              checked={checked[4]}
+              onChange={() => handleChangeChecked(4)}
+              onClick={filterValue}
             />
             Accessories
           </label>

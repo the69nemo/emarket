@@ -91,4 +91,8 @@
     column-gap: 16px;
     padding: 20px 25px;
   }
+
+  .product-listings__filter-panel-btn {
+    display: inline-block;
+  }
 }
