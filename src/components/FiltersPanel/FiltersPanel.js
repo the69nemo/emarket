@@ -8,6 +8,12 @@ function FiltersPanel({ filterParam, setFilterParam, handleFilterCurrentProduct 
     new Array(13).fill(false)
   );
 
+  useEffect(() => {
+    if (filterParam.length !== 0) {
+      handleFilterCurrentProduct()
+    }
+  }, [filterParam]);
+
   const filterValue = (event) => {
     setInputValue(event.target.value);
   }
@@ -29,14 +35,6 @@ function FiltersPanel({ filterParam, setFilterParam, handleFilterCurrentProduct 
     }
 
     setFilterParam(newFilterParam)
-
-    handleFilterCurrentProduct()
-
-
-
-    // console.log(eventValue)
-    // const filters = updatedCheckedState.
-
   }
 
   return (
