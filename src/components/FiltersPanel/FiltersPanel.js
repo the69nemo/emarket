@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./FiltersPanel.css";
+import FILTER_PARAM from '../../data/FilterParam'
 
 function FiltersPanel({ filterParam, setFilterParam, handleFilterCurrentProduct }) {
 
-  const [inputValue, setInputValue] = useState();
+    const [inputValue, setInputValue] = useState();
   const [checked, setChecked] = useState(
     new Array(13).fill(false)
   );
