@@ -1,45 +1,38 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./FiltersPanel.css";
-import FILTER_PARAM from '../../data/FilterParam'
+import FILTER_PARAM from "../../data/FilterParam";
 
-function FiltersPanel({ filterParam, setFilterParam, handleFilterCurrentProduct }) {
-
-    const [inputValue, setInputValue] = useState();
-  const [checked, setChecked] = useState(
-    new Array(13).fill(false)
-  );
-
-  useEffect(() => {
-    if (filterParam.length !== 0) {
-      handleFilterCurrentProduct()
-    }
-  }, [filterParam]);
+function FiltersPanel({
+  allData,
+  handleShowFilterProduct,
+}) {
+  const [inputValue, setInputValue] = useState();
+  const [checked, setChecked] = useState(new Array(13).fill(false));
 
   const filterValue = (event) => {
     setInputValue(event.target.value);
-  }
+  };
 
   const handleChangeChecked = (position) => {
-
     const updatedCheckedState = checked.map((item, index) =>
-      index === position ? !item : item);
+      index === position ? !item : item
+    );
 
     setChecked(updatedCheckedState);
 
-    const index = filterParam.indexOf(inputValue)
-    const newFilterParam = [...filterParam]
-    console.log(newFilterParam)
-    if (index !== -1) {
-      newFilterParam.splice(index, 1)
-    } else {
-      newFilterParam.push(inputValue)
+    const filteredProduct = [];
+    for (let i = 0; i < updatedCheckedState.length; i++) {
+      if (updatedCheckedState[i] === true) {
+        const filter = allData.filter((elem) => elem.type === FILTER_PARAM[i]);
+        filteredProduct.push(filter);
+      }
     }
 
-    setFilterParam(newFilterParam)
-  }
+    handleShowFilterProduct(filteredProduct);
+  };
 
   return (
-    <div className='filtersPanel' >
+    <div className="filtersPanel">
       <div className="filtersPanel__container">
         <fieldset className="filtersPanel__filters-group">
           <legend className="filtersPanel__filter-title">Product type</legend>

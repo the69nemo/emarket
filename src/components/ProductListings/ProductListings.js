@@ -11,20 +11,13 @@ function ProductListings({ allData, handleOpenPopup }) {
   const [isFilterMenuOpen, setIsFilterMenuOpen] = useState(false);
   const [isSortingOpen, setIsSortingOpen] = useState(false);
   const [currentProduct, setCurrentProduct] = useState(allData);
-  const [filterParam, setFilterParam] = useState([]);
 
   const handleFilterMenu = () => setIsFilterMenuOpen(!isFilterMenuOpen);
   const handleSortingMenu = () => setIsSortingOpen(!isSortingOpen);
-
-  const handleFilterCurrentProduct = () => {
-    const filteredProduct = [];
-    if (filterParam.length !== 0) {
-      for (let i = 0; i <= filterParam.length; i++) {
-        const filter = allData.filter((elem) => elem.type === filterParam[i]);
-        filteredProduct.push(filter);
-      }
-      setCurrentProduct(filteredProduct);
-    }
+  const handleShowFilterProduct = (product) => {
+    product.length !== 0
+      ? setCurrentProduct(product.flat())
+      : setCurrentProduct(allData);
   };
 
   return (
@@ -71,10 +64,8 @@ function ProductListings({ allData, handleOpenPopup }) {
       <div className="product-listings__container">
         <FiltersPanel
           className="product-listings__panel"
-          filterParam={filterParam}
-          // currentProduct={currentProduct}
-          setFilterParam={setFilterParam}
-          handleFilterCurrentProduct={handleFilterCurrentProduct}
+          allData={allData}
+          handleShowFilterProduct={handleShowFilterProduct}
         />
         <ProductsLists
           className="product-listings__lists"
