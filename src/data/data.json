@@ -88,7 +88,7 @@
     "type": "accessories",
     "name": "Accessories2",
     "author": "smith",
-    "prise": 1250,
+    "prise": 25,
     "description": "sad fjkl; kjyfgds cvmn jkjythrfgs dvbn bfcx",
     "dimensions": {
       "height": 300,
@@ -102,7 +102,7 @@
     "type": "homeware",
     "name": "homeware2",
     "author": "yorke",
-    "prise": 110,
+    "prise": 10,
     "description": "sa dfjk l;k jyfg dscvmnj kjythrfgs dvbnbfcx",
     "dimensions": {
       "height": 30,
@@ -115,7 +115,7 @@
     "id": 9,
     "type": "sofas",
     "name": "sofas2",
-    "author": "smalls",
+    "author": "gallagher",
     "prise": 550,
     "description": "sdsad 21312l ;kjyf gdscvm njkjy thrfgsdv bnbfcx",
     "dimensions": {
@@ -129,7 +129,7 @@
     "id": 10,
     "type": "fittings",
     "name": "Light fittings2",
-    "author": "gallagher",
+    "author": "smalls",
     "prise": 250,
     "description": "123sad fjk ;kjyfgdscvm n jk jy thrf gsdvb nbfcx",
     "dimensions": {

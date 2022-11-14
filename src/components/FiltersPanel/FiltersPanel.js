@@ -21,10 +21,25 @@ function FiltersPanel({
     setChecked(updatedCheckedState);
 
     const filteredProduct = [];
+
     for (let i = 0; i < updatedCheckedState.length; i++) {
       if (updatedCheckedState[i] === true) {
-        const filter = allData.filter((elem) => elem.type === FILTER_PARAM[i]);
-        filteredProduct.push(filter);
+        if (i < 5) {
+          const filter = allData.filter((elem) => elem.type === FILTER_PARAM[i]);
+          filteredProduct.push(filter);
+        } else if (i == 5) {
+          const filter = allData.filter((elem) => elem.prise <= FILTER_PARAM[i]);
+          filteredProduct.push(filter);
+        } else if (i == 6) {
+          const filter = allData.filter((elem) => elem.prise > FILTER_PARAM[i-1] && elem.prise <= FILTER_PARAM[i]);
+          filteredProduct.push(filter);
+        } else if (i == 7) {
+          const filter = allData.filter((elem) => elem.prise > FILTER_PARAM[i]);
+          filteredProduct.push(filter);
+        } else {
+          const filter = allData.filter((elem) => elem.author === FILTER_PARAM[i]);
+          filteredProduct.push(filter);
+        }
       }
     }
 
@@ -106,6 +121,8 @@ function FiltersPanel({
               type="checkbox"
               name="less_hundred"
               value="100"
+              checked={checked[5]}
+              onChange={() => handleChangeChecked(5)}
             />
             0-100
           </label>
@@ -115,6 +132,8 @@ function FiltersPanel({
               type="checkbox"
               name="more_hundred"
               value="250"
+              checked={checked[6]}
+              onChange={() => handleChangeChecked(6)}
             />
             101-250
           </label>
@@ -124,6 +143,8 @@ function FiltersPanel({
               type="checkbox"
               name="more_two_hundred_fifty"
               value="251"
+              checked={checked[7]}
+              onChange={() => handleChangeChecked(7)}
             />
             250+
           </label>
@@ -137,6 +158,8 @@ function FiltersPanel({
               type="checkbox"
               name="smith"
               value="smith"
+              checked={checked[8]}
+              onChange={() => handleChangeChecked(8)}
             />
             Robert Smith
           </label>
@@ -146,6 +169,8 @@ function FiltersPanel({
               type="checkbox"
               name="gallagher"
               value="gallagher"
+              checked={checked[9]}
+              onChange={() => handleChangeChecked(9)}
             />
             Liam Gallagher
           </label>
@@ -155,6 +180,8 @@ function FiltersPanel({
               type="checkbox"
               name="smalls"
               value="smalls"
+              checked={checked[10]}
+              onChange={() => handleChangeChecked(10)}
             />
             Biggie Smalls
           </label>
@@ -164,6 +191,8 @@ function FiltersPanel({
               type="checkbox"
               name="yorke"
               value="yorke"
+              checked={checked[11]}
+              onChange={() => handleChangeChecked(11)}
             />
             Thom Yorke
           </label>
