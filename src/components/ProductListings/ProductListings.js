@@ -68,7 +68,6 @@ function ProductListings({ allData, handleOpenPopup }) {
           className="product-listings__panel"
           allData={allData}
           handleShowFilterProduct={handleShowFilterProduct}
-          currentProduct={currentProduct}
         />
         <ProductsLists
           className="product-listings__lists"
