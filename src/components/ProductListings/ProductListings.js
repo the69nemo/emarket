@@ -59,6 +59,8 @@ function ProductListings({ allData, handleOpenPopup }) {
         <FiltersSidePanel
           isFilterMenuOpen={isFilterMenuOpen}
           handleFilterMenu={handleFilterMenu}
+          allData={allData}
+          handleShowFilterProduct={handleShowFilterProduct}
         />
       </div>
       <div className="product-listings__container">

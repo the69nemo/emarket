@@ -1,7 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import "./FiltersSidePanel.css";
+import FILTER_PARAM from "../../data/FilterParam";
 
-function FiltersSidePanel({ isFilterMenuOpen, handleFilterMenu}) {
+function FiltersSidePanel({ isFilterMenuOpen, handleFilterMenu, allData, handleShowFilterProduct}) {
+
+  const [inputValue, setInputValue] = useState();
+  const [checked, setChecked] = useState(new Array(13).fill(false));
+
+  const filterValue = (event) => {
+    setInputValue(event.target.value);
+  };
+
+  const handleChangeChecked = (position) => {
+    const updatedCheckedState = checked.map((item, index) =>
+      index === position ? !item : item
+    );
+
+    setChecked(updatedCheckedState);
+
+    const filteredProduct = [];
+    for (let i = 0; i < updatedCheckedState.length; i++) {
+      if (updatedCheckedState[i] === true) {
+        const filter = allData.filter((elem) => elem.type === FILTER_PARAM[i]);
+        filteredProduct.push(filter);
+      }
+    }
+
+    handleShowFilterProduct(filteredProduct);
+  };
+
   return (
     <div className={`filtersSidePanel ${isFilterMenuOpen && "open"}`}>
       <button type='button' className="filtersSidePanel__close-btn" onClick={handleFilterMenu} />
@@ -16,6 +43,8 @@ function FiltersSidePanel({ isFilterMenuOpen, handleFilterMenu}) {
               type="checkbox"
               name="furniture"
               value="furniture"
+              checked={checked[0]}
+              onChange={() => handleChangeChecked(0)}
             />
             Furniture
           </label>
@@ -25,6 +54,8 @@ function FiltersSidePanel({ isFilterMenuOpen, handleFilterMenu}) {
               type="checkbox"
               name="homeware"
               value="homeware"
+              checked={checked[1]}
+              onChange={() => handleChangeChecked(1)}
             />
             Homeware
           </label>
@@ -34,6 +65,8 @@ function FiltersSidePanel({ isFilterMenuOpen, handleFilterMenu}) {
               type="checkbox"
               name="sofas"
               value="sofas"
+              checked={checked[2]}
+              onChange={() => handleChangeChecked(2)}
             />
             Sofas
           </label>
@@ -43,6 +76,8 @@ function FiltersSidePanel({ isFilterMenuOpen, handleFilterMenu}) {
               type="checkbox"
               name="fittings"
               value="fittings"
+              checked={checked[3]}
+              onChange={() => handleChangeChecked(3)}
             />
             Light fittings
           </label>
@@ -52,6 +87,8 @@ function FiltersSidePanel({ isFilterMenuOpen, handleFilterMenu}) {
               type="checkbox"
               name="accessories"
               value="accessories"
+              checked={checked[4]}
+              onChange={() => handleChangeChecked(4)}
             />
             Accessories
           </label>
