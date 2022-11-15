@@ -21,17 +21,17 @@ function FiltersSidePanel({ isFilterMenuOpen, handleFilterMenu, allData, handleS
     const filteredProduct = [];
 
     for (let i = 0; i < updatedCheckedState.length; i++) {
-      if (updatedCheckedState[i] === true) {
+      if (updatedCheckedState[i]) {
         if (i < 5) {
           const filter = allData.filter((elem) => elem.type === FILTER_PARAM[i]);
           filteredProduct.push(filter);
-        } else if (i == 5) {
+        } else if (i === 5) {
           const filter = allData.filter((elem) => elem.prise <= FILTER_PARAM[i]);
           filteredProduct.push(filter);
-        } else if (i == 6) {
+        } else if (i === 6) {
           const filter = allData.filter((elem) => elem.prise > FILTER_PARAM[i-1] && elem.prise <= FILTER_PARAM[i]);
           filteredProduct.push(filter);
-        } else if (i == 7) {
+        } else if (i === 7) {
           const filter = allData.filter((elem) => elem.prise > FILTER_PARAM[i]);
           filteredProduct.push(filter);
         } else {
